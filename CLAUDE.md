@@ -26,9 +26,11 @@ python3 -m http.server 8080
 ## Structure
 
 - `index.html` — landing page linking to all disclosure documents
-- `privacy-policy.html` — Privacy Policy (add when ready)
-- `terms-of-service.html` — Terms of Service (add when ready)
+- `legal/privacy-policy.html` — Privacy Policy
+- `legal/terms-and-conditions.html` — Terms & Conditions
 - `assets/` — images and other static files (add when needed)
+
+The source markdown content for the legal docs lives in `terms_and_conditions.txt` and `simple_privacy_policy.txt` at the repo root.
 
 ## Page Conventions
 

@@ -1,0 +1,137 @@
+**Privacy Policy**
+
+This Privacy Policy applies to the Spots app (hereby referred to as "Application") for mobile devices that was created by William York (hereby referred to as "Service Provider") as a free service. This service is intended for use "AS IS".
+
+This Privacy Policy is effective as of 2026-03-03.
+
+---
+
+**Information Collection and Use**
+
+The Application collects the following information when you download and use it.
+
+*Automatically Collected Information:*
+
+*   Network connection metadata such as IP address, which may be received by third-party analytics and crash reporting services (PostHog and Sentry) as a standard byproduct of network requests; Sentry is configured to suppress IP address collection where technically possible
+*   The features and screens of the Application that you visit, the time and date of your visit, and the time spent on those screens
+*   The operating system you use on your mobile device
+*   Crash logs and diagnostic information (transmitted to Sentry for bug tracking and error monitoring)
+*   App usage and interaction events such as feature usage and screen visits (transmitted to PostHog for analytics)
+
+*Location Information:*
+
+The Application collects your device's precise GPS location and approximate location to enable its core functionality:
+
+*   Pinning spots to a map at your current location
+*   Displaying spots near you on the map
+*   Location-based search and filtering
+
+You control when location access is granted through your device's permission settings. The Application functions with limited capability without location access (manual pin placement is supported). GPS coordinates are never transmitted to analytics or crash reporting services (PostHog and Sentry). When cloud sync and community sharing features are enabled in a future version of the Application, the GPS coordinates of spots you create or save will be transmitted to and stored on Supabase servers in the United States.
+
+*Account and Profile Information:*
+
+The Application currently operates without user accounts. When account features are introduced in a future version, the Service Provider will collect:
+
+*   Email address
+*   Username and display name
+*   Profile bio (optional)
+*   Profile photo (optional)
+*   Google account name and email address (if you choose to sign in with Google)
+*   A unique user identifier (UUID) assigned by the Application
+
+*User-Generated Content:*
+
+The Application stores content you create locally on your device, including:
+
+*   Spot titles, descriptions, and pinned locations
+*   Photos you add to spots
+*   Comments you post
+*   Tags you apply to spots
+*   Custom lists you create
+
+This content currently remains on your device and is not transmitted to the Service Provider's servers. When cloud sync and community sharing features are enabled in a future version, this content will be transmitted to and stored on Supabase servers in the United States.
+
+---
+
+**Third Party Access**
+
+The Service Provider shares certain information with the following third-party service providers. Each has its own Privacy Policy governing data use. Crash reports and diagnostic data are sent to Sentry. Behavioral analytics events (screen visits, feature interactions) are sent to PostHog; these events do not include GPS coordinates, spot labels, tag names, comment content, or other user-generated text. When cloud sync and community sharing features are enabled in a future version of the Application, user-provided content (spots, photos, comments, tags) will be transmitted to and stored on Supabase servers to enable those features.
+
+*   [Google Play Services](https://www.google.com/policies/privacy/)
+*   [Google Sign-In](https://policies.google.com/privacy) — will process your Google identity for authentication when account sign-in features are enabled in a future version of the Application
+*   [Supabase](https://supabase.com/privacy) — cloud database and authentication provider; stores your account data, spots, photos, and other user-generated content on servers located in the United States
+*   [Sentry](https://sentry.io/privacy/) — crash reporting and error monitoring; receives device metadata, stack traces, and (when authenticated) a user context identifier
+*   [PostHog](https://posthog.com/privacy) — product analytics; receives anonymized app usage events; does not receive GPS coordinates, spot labels, tag names, comment text, or search query content
+
+The Service Provider does not sell your personal information to third parties.
+
+The Service Provider may disclose your information:
+
+*   As required by law, such as to comply with a subpoena or similar legal process
+*   When disclosure is necessary to protect the rights, safety, or property of the Service Provider, users, or others, or to investigate fraud
+*   In response to a lawful government request
+*   With trusted service providers acting on behalf of the Service Provider, who have agreed to maintain the confidentiality of your information and use it only for the purposes disclosed in this Privacy Policy
+
+---
+
+**User-Generated Content and Public Visibility**
+
+Spots, comments, and tags you create may be visible to other users of the Application. Do not include personally identifiable information in spot descriptions, comments, or titles that you do not wish to share publicly.
+
+---
+
+**Opt-Out Rights**
+
+You can stop all collection of information by the Application by uninstalling it. You may manage location permissions at any time through your device settings.
+
+If you have created an account, you may delete your account at any time through the in-app account settings (Settings → Account → Delete Account). Upon account deletion:
+
+*   Your account profile, authentication credentials, and personal media files are permanently deleted from the Service Provider's servers
+*   Your public contributions (spots, comments, endorsements) that you have shared with other users may be retained in anonymized form with your personal attribution removed, in order to maintain the integrity of community-contributed data
+
+For questions about data deletion, you may also contact the Service Provider at william.dw.york@gmail.com.
+
+---
+
+**Data Retention Policy**
+
+*   Account data and profile information: retained until you delete your account
+*   User-generated content after account deletion: retained in anonymized form (see Opt-Out Rights above)
+*   Crash logs and error reports (Sentry): retained for 90 days per Sentry's data retention policy
+*   Analytics events (PostHog): retained per PostHog's data retention settings
+*   Local device data (prior to cloud sync being enabled): stored only on your device and not transmitted to any server
+
+---
+
+**Children**
+
+The Application is not intended for users under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. Users must be at least 13 years old to create an account; this is stated in the Application's Terms of Service, which users must accept before use.
+
+If you are a parent or guardian and believe your child under 13 has provided personal information to the Application, please contact the Service Provider at william.dw.york@gmail.com. The Service Provider will promptly delete any such information upon verification.
+
+---
+
+**Security**
+
+The Service Provider takes reasonable measures to protect your information, including physical, electronic, and procedural safeguards. User data stored with Supabase is protected by Supabase's security infrastructure, including encrypted connections (TLS) and row-level access controls. No security measure is 100% guaranteed; use the Application with this understanding.
+
+---
+
+**Changes**
+
+This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes by updating this page with a new effective date. For material changes, users may be notified via in-app notification or email. You are advised to consult this Privacy Policy regularly. Continued use of the Application after changes are posted constitutes acceptance of the updated Privacy Policy.
+
+---
+
+**Your Consent**
+
+By using the Application, you consent to the collection and processing of your information as described in this Privacy Policy.
+
+---
+
+**Contact Us**
+
+If you have questions about this Privacy Policy or the Service Provider's privacy practices, please contact:
+
+William York
+william.dw.york@gmail.com
