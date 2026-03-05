@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<browserconfig>
-  <msapplication>
-    <tile>
-      <square150x150logo src="/images/icons/spots_favicon_512x512_maskable.png"/>
-      <TileColor>#4A90A4</TileColor>
-    </tile>
-  </msapplication>
-</browserconfig>
