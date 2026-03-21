@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Spots</title>
+  <link rel="icon" href="../favicon.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/legal.css">
+</head>
+<body class="legal-document">
+  <div class="container">
+    <a class="back" href="./">&larr; Back to Legal</a>
+    <h1>Privacy Policy</h1>
+    <p class="effective">Effective as of March 20, 2026</p>
+
+    <p>This Privacy Policy applies to the Spots app (hereby referred to as "Application") for mobile devices that was created by William York (hereby referred to as "Service Provider") as a service. This service is intended for use "AS IS".</p>
+
+    <hr>
+
+    <h2>Information Collection and Use</h2>
+    <p>The Application collects the following information when you download and use it.</p>
+
+    <p><em>Automatically Collected Information:</em></p>
+    <ul>
+      <li>Network connection metadata such as IP address, which may be received by third-party analytics and crash reporting services (PostHog and Sentry) as a standard byproduct of network requests; Sentry is configured to suppress IP address collection where technically possible</li>
+      <li>The features and screens of the Application that you visit, the time and date of your visit, and the time spent on those screens</li>
+      <li>The operating system you use on your mobile device</li>
+      <li>Crash logs and diagnostic information (transmitted to Sentry for bug tracking and error monitoring); when you are signed in, a pseudonymous user identifier (your Supabase auth UUID — not your email or display name) is attached to crash reports to help diagnose user-specific issues</li>
+      <li>App usage and interaction events such as feature usage and screen visits (transmitted to PostHog for analytics); these events do not include GPS coordinates, spot labels, tag names, comment text, search queries, or other user-generated content</li>
+      <li>Server-side product analytics events (such as content creation milestones and engagement metrics) are transmitted from the Service Provider's servers to PostHog; these events contain only event names, pseudonymous user identifiers, and aggregate counts — never GPS coordinates, user-generated text, or personal information</li>
+    </ul>
+
+    <p><em>Location Information:</em></p>
+    <p>The Application collects your device's precise GPS location and approximate location to enable its core functionality:</p>
+    <ul>
+      <li>Pinning spots to a map at your current location</li>
+      <li>Displaying spots near you on the map</li>
+      <li>Location-based search and filtering</li>
+    </ul>
+    <p>You control when location access is granted through your device's permission settings. The Application functions with limited capability without location access (manual pin placement is supported). GPS coordinates are never transmitted to analytics or crash reporting services (PostHog and Sentry). The GPS coordinates of spots you create or save are transmitted to and stored on Supabase servers in the United States as part of the Application's cloud sync functionality.</p>
+
+    <p><em>Account and Profile Information:</em></p>
+    <p>When you create an account, the Service Provider collects:</p>
+    <ul>
+      <li>Email address</li>
+      <li>Username and display name</li>
+      <li>Profile bio (optional)</li>
+      <li>Profile photo (optional)</li>
+      <li>Google account name and email address (if you choose to sign in with Google)</li>
+      <li>A unique user identifier (UUID) assigned by the Application</li>
+    </ul>
+    <p>Guest users may use limited features of the Application without creating an account. Guest data is stored locally on your device, is not synced to the Service Provider's servers, and may be permanently lost if the Application is reinstalled, the device is reset, or you later create an account.</p>
+
+    <p><em>User-Generated Content:</em></p>
+    <p>The Application stores content you create, including:</p>
+    <ul>
+      <li>Spot titles, descriptions, and pinned locations</li>
+      <li>Photos you add to spots</li>
+      <li>Comments you post</li>
+      <li>Tags you apply to spots</li>
+      <li>Endorsements (your expression of support for a spot)</li>
+      <li>Custom lists you create</li>
+    </ul>
+    <p>When you are signed in, this content is synced to and stored on Supabase servers in the United States. A local copy is also retained on your device for offline access.</p>
+
+    <p><em>Photos and Media:</em></p>
+    <p>Photos you upload are compressed and transmitted to Supabase Storage via resumable upload (TUS protocol). The Application strips GPS coordinates from photo EXIF metadata before upload. Other EXIF metadata (such as camera model and timestamp) may be retained in the uploaded file.</p>
+
+    <p><em>Invitation Recipient Information:</em></p>
+    <p>When you invite another person to view a spot, you provide their email address. The Service Provider processes the recipient's email address solely to deliver the invitation email via Resend (a third-party email delivery service). Invitation email addresses are stored in the Service Provider's database for the duration of the invitation's validity (7 days). Accepted or expired invitation email addresses are retained for up to 1 year for audit and abuse prevention purposes, then permanently deleted.</p>
+    <p>If you received an invitation email but have not created an account, you may request deletion of your email address by contacting the Service Provider at <a href="mailto:william.dw.york@gmail.com">william.dw.york@gmail.com</a>.</p>
+
+    <hr>
+
+    <h2>Third Party Access</h2>
+    <p>The Service Provider shares certain information with the following third-party service providers. Each has its own Privacy Policy governing data use.</p>
+    <ul>
+      <li><a href="https://www.google.com/policies/privacy/">Google Play Services</a></li>
+      <li><a href="https://policies.google.com/privacy">Google Sign-In</a> — processes your Google identity for authentication when you choose to sign in with Google</li>
+      <li><a href="https://supabase.com/privacy">Supabase</a> — cloud database, authentication, and file storage provider; stores your account data, spots, photos, and other user-generated content on servers located in the United States</li>
+      <li><a href="https://sentry.io/privacy/">Sentry</a> — crash reporting and error monitoring; receives device metadata, stack traces, and (when authenticated) a pseudonymous user identifier (Supabase auth UUID)</li>
+      <li><a href="https://posthog.com/privacy">PostHog</a> — product analytics; receives app usage events and server-side product events; does not receive GPS coordinates, spot labels, tag names, comment text, or search query content</li>
+      <li><a href="https://support.google.com/admob/answer/6128543">Google AdMob</a> — advertising; serves contextual (non-personalized) ads within the Application; all ad requests are tagged as child-directed under COPPA, meaning no personalized or behavioral advertising is served to any user; AdMob may collect device advertising identifiers and contextual signals to serve ads</li>
+      <li><a href="https://resend.com/legal/privacy-policy">Resend</a> — transactional email delivery; receives the recipient email address when an invitation is sent and transmits the invitation email on behalf of the Service Provider; Resend does not receive GPS coordinates, spot names, or other user-generated content</li>
+    </ul>
+    <p>The Service Provider does not sell your personal information to third parties.</p>
+    <p>The Service Provider may disclose your information:</p>
+    <ul>
+      <li>As required by law, such as to comply with a subpoena or similar legal process</li>
+      <li>When disclosure is necessary to protect the rights, safety, or property of the Service Provider, users, or others, or to investigate fraud</li>
+      <li>In response to a lawful government request</li>
+      <li>With trusted service providers acting on behalf of the Service Provider, who have agreed to maintain the confidentiality of your information and use it only for the purposes disclosed in this Privacy Policy</li>
+    </ul>
+
+    <hr>
+
+    <h2>Advertising</h2>
+    <p>The Application displays contextual advertisements served by Google AdMob in the free tier of the service. All ad requests are tagged as child-directed under the Children's Online Privacy Protection Act (COPPA), meaning no personalized or behavioral advertising is served regardless of the user's age. Premium tier users do not see advertisements.</p>
+
+    <hr>
+
+    <h2>User-Generated Content and Public Visibility</h2>
+    <p>Spots, comments, tags, and endorsements you create may be visible to other users of the Application. Do not include personally identifiable information in spot descriptions, comments, or titles that you do not wish to share publicly.</p>
+
+    <hr>
+
+    <h2>Content Moderation</h2>
+    <p>The Service Provider may review, hide, or remove content that violates the Terms of Service or community standards. Content may be automatically hidden from public view when it receives multiple reports from other users. User accounts may be suspended or permanently banned for violations. Moderation actions are logged for operational and audit purposes. For more details, see the Application's <a href="terms-and-conditions.html">Terms of Service</a>.</p>
+
+    <hr>
+
+    <h2>Opt-Out Rights</h2>
+    <p>You can stop all collection of information by the Application by uninstalling it. You may manage location permissions at any time through your device settings.</p>
+    <p>You may opt out of analytics data collection through the Application's settings. When opted out, no usage events are transmitted to PostHog.</p>
+    <p>If you have created an account, you may delete your account at any time through the in-app account settings (Settings &gt; Account &gt; Delete Account). Upon account deletion:</p>
+    <ul>
+      <li>Your account profile, authentication credentials, and personal media files are permanently deleted from the Service Provider's servers</li>
+      <li>Your public contributions (spots, comments, endorsements) that have been shared with other users may be retained in anonymized form with your personal attribution removed, in order to maintain the integrity of community-contributed data</li>
+      <li>Content reports you have filed or that have been filed against your content are retained in redacted form (your personal identifiers removed) for up to 3 years for moderation integrity and abuse prevention</li>
+      <li>Invitation records you created are retained in anonymized form (your user ID removed) for audit purposes</li>
+    </ul>
+    <p>For questions about data deletion, you may also contact the Service Provider at <a href="mailto:william.dw.york@gmail.com">william.dw.york@gmail.com</a>.</p>
+
+    <hr>
+
+    <h2>Data Retention Policy</h2>
+    <ul>
+      <li><strong>Account data and profile information:</strong> retained until you delete your account</li>
+      <li><strong>User-generated content</strong> (spots, comments, tags, endorsements): retained while your account is active; upon deletion, community contributions are anonymized and retained indefinitely</li>
+      <li><strong>Content moderation reports:</strong> retained for up to 3 years after the report is resolved, with personal identifiers removed upon account deletion</li>
+      <li><strong>Invitation email addresses:</strong> retained for the invitation validity period (7 days), then up to 1 year after acceptance or expiry for audit and abuse prevention</li>
+      <li><strong>Photos and media:</strong> retained on Supabase Storage while your account is active; permanently deleted upon account deletion</li>
+      <li><strong>Crash logs and error reports (Sentry):</strong> retained for 90 days per Sentry's data retention policy</li>
+      <li><strong>Analytics events (PostHog):</strong> retained per PostHog's data retention settings</li>
+      <li><strong>Local device data:</strong> stored on your device for offline access; not transmitted to the Service Provider's servers for guest (unauthenticated) users</li>
+    </ul>
+
+    <hr>
+
+    <h2>Children</h2>
+    <p>The Application is not intended for users under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. Users must be at least 13 years old to create an account; this is stated in the Application's <a href="terms-and-conditions.html">Terms of Service</a>, which users must accept before use. All advertising served within the Application is tagged as child-directed under COPPA regardless of the user's age, ensuring no personalized or behavioral advertising is displayed.</p>
+    <p>If you are a parent or guardian and believe your child under 13 has provided personal information to the Application, please contact the Service Provider at <a href="mailto:william.dw.york@gmail.com">william.dw.york@gmail.com</a>. The Service Provider will promptly delete any such information upon verification.</p>
+
+    <hr>
+
+    <h2>Security</h2>
+    <p>The Service Provider takes reasonable measures to protect your information, including physical, electronic, and procedural safeguards:</p>
+    <ul>
+      <li>Data transmitted between the Application and the Service Provider's servers is encrypted in transit using TLS</li>
+      <li>User data stored with Supabase is protected by Supabase's security infrastructure, including encrypted connections and row-level access controls</li>
+      <li>The local database on your device is encrypted using AES-256 encryption (SQLite3MultipleCiphers), with encryption keys stored in the platform's secure enclave (Android Keystore or iOS Keychain)</li>
+      <li>Authentication tokens are stored in platform-secured storage (flutter_secure_storage)</li>
+    </ul>
+    <p>No security measure is 100% guaranteed; use the Application with this understanding.</p>
+
+    <hr>
+
+    <h2>Do Not Track</h2>
+    <p>The Application does not respond to Do Not Track browser signals. You may opt out of analytics collection through the Application's settings as described in the Opt-Out Rights section.</p>
+
+    <hr>
+
+    <h2>Changes</h2>
+    <p>This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes by updating this page with a new effective date. For material changes, users will be notified via in-app notification or email at least 14 days before the changes take effect. You are advised to consult this Privacy Policy regularly. Continued use of the Application after changes are posted constitutes acceptance of the updated Privacy Policy.</p>
+
+    <hr>
+
+    <h2>Your Consent</h2>
+    <p>By using the Application, you consent to the collection and processing of your information as described in this Privacy Policy.</p>
+
+    <hr>
+
+    <h2>Contact Us</h2>
+    <p>If you have questions about this Privacy Policy or the Service Provider's privacy practices, please contact:</p>
+    <div class="contact">
+      <strong>William York</strong><br>
+      <a href="mailto:william.dw.york@gmail.com">william.dw.york@gmail.com</a>
+    </div>
+  </div>
+  <footer>&copy; 2026 York Labs</footer>
+</body>
+</html>

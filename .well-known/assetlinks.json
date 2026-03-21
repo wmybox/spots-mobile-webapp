@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.yorklabs.spots",
+      "sha256_cert_fingerprints": [
+        "CC:10:F4:55:EF:51:DE:27:48:7E:7B:6A:1F:EF:44:D3:95:35:6B:D6:94:49:F3:8E:00:D6:7A:59:4B:75:87:80"
+      ]
+    }
+  }
+]

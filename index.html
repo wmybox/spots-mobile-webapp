@@ -3,92 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Basic -->
-<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/spots_favicon_32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/spots_favicon_16x16.png">
-<link rel="icon" href="/images/icons/spots_favicon_32x32.png">
-
-<!-- PWA / Android -->
-<link rel="manifest" href="/manifest.webmanifest">
-<meta name="theme-color" content="#4A90A4">
-
-<!-- iOS -->
-<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/spots_apple_touch.png">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-
-<!-- Windows (optional but nice) -->
-<meta name="msapplication-TileColor" content="#4A90A4">
-<meta name="msapplication-config" content="/configs/browserconfig.xml">
-
-  <title>Spots</title>
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      color: #1a1a1a;
-      background: #fff;
-      padding: 1.5rem 1rem;
-      max-width: 680px;
-      margin: 0 auto;
-    }
-
-    h1 {
-      font-size: 1.75rem;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      margin-bottom: 1rem;
-      color: #444;
-    }
-
-    nav {
-      margin-top: 2rem;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    nav li {
-      border-top: 1px solid #e5e5e5;
-    }
-
-    nav li:last-child {
-      border-bottom: 1px solid #e5e5e5;
-    }
-
-    nav a {
-      display: block;
-      padding: 0.875rem 0;
-      color: #0066cc;
-      text-decoration: none;
-      font-size: 1rem;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Spots — Discover, Plan, Share Outdoor Adventures</title>
+  <meta name="description" content="Discover outdoor activities, plan trips with friends, and share your favorite places — all in one app.">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <h1>Spots</h1>
-  <p>Legal information and disclosures for the Spots mobile app.</p>
 
-  <nav>
-    <ul>
-      <li><a href="legal/privacy-policy.html">Privacy Policy</a></li>
-      <li><a href="legal/terms-and-conditions.html">Terms &amp; Conditions</a></li>
-    </ul>
-  </nav>
+  <!-- Header -->
+  <header class="header" id="header">
+    <a href="/" class="header-logo">
+      <img src="images/logo-icon.png" alt="Spots logo" width="32" height="32" class="header-logo-icon">
+      <span class="header-logo-text">Spots</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="header-nav">
+      <div class="header-nav-links">
+        <a href="#features" class="header-nav-link">Features</a>
+        <a href="#how-it-works" class="header-nav-link">How It Works</a>
+      </div>
+      <a href="#download" class="header-cta">Get the App</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-badge animate-on-scroll">
+      <span class="hero-badge-dot"></span>
+      <span>Now available on iOS &amp; Android</span>
+    </div>
+    <h1 class="hero-title animate-on-scroll">Your next adventure<br>starts with a spot.</h1>
+    <p class="hero-subtitle animate-on-scroll">Discover outdoor activities, plan trips with friends, and share<br class="hide-mobile">your favorite places — all in one app.</p>
+    <div class="hero-actions animate-on-scroll">
+      <a href="#download" class="btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:10px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Spots
+      </a>
+      <a href="#features" class="btn-secondary">Learn More</a>
+    </div>
+    <div class="hero-mockups animate-on-scroll">
+      <div class="hero-mockup hero-mockup--side">
+        <img src="images/mockup-map.webp" alt="Spots map screen showing outdoor activity locations" width="260" height="520" loading="lazy">
+      </div>
+      <div class="hero-mockup">
+        <img src="images/mockup-detail.webp" alt="Spot detail screen with location info and community comments" width="260" height="520" loading="lazy">
+      </div>
+      <div class="hero-mockup hero-mockup--side">
+        <img src="images/mockup-trip.webp" alt="Trip planning screen with itinerary and route map" width="260" height="520" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="features-inner">
+      <div class="features-header animate-on-scroll">
+        <span class="section-label">WHAT MAKES SPOTS DIFFERENT</span>
+        <h2 class="features-title">Everything you need to<br class="hide-mobile"> plan your next adventure</h2>
+        <p class="features-subtitle">Spots brings together discovery, planning, and community in one beautiful app — so you spend less time organizing and more time exploring.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="feature-card-title">Discover Spots</h3>
+          <p class="feature-card-description">Find hidden gems, popular trails, and local favorites shared by a community of outdoor enthusiasts.</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+          </div>
+          <h3 class="feature-card-title">Plan Together</h3>
+          <p class="feature-card-description">Organize trips with friends, coordinate schedules, and build itineraries around your favorite spots.</p>
+        </div>
+        <div class="feature-card animate-on-scroll">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="feature-card-title">Share &amp; Connect</h3>
+          <p class="feature-card-description">Share your discoveries, follow friends' adventures, and build a community around the places you love.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="how-it-works-header animate-on-scroll">
+      <span class="section-label">HOW IT WORKS</span>
+      <h2 class="how-it-works-title">From discovery to adventure<br class="hide-mobile"> in three simple steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step animate-on-scroll">
+        <div class="step-number">1</div>
+        <div class="step-mockup">
+          <img src="images/step-explore.webp" alt="Map exploration screen" width="220" height="400" loading="lazy">
+        </div>
+        <h3 class="step-title">Explore the Map</h3>
+        <p class="step-description">Browse spots near you or search for activities by type, vibe, or conditions.</p>
+      </div>
+      <div class="step animate-on-scroll">
+        <div class="step-number">2</div>
+        <div class="step-mockup">
+          <img src="images/step-save.webp" alt="Saved spots lists screen" width="220" height="400" loading="lazy">
+        </div>
+        <h3 class="step-title">Save &amp; Organize</h3>
+        <p class="step-description">Bookmark spots to your lists, add tags, and plan trips with friends.</p>
+      </div>
+      <div class="step animate-on-scroll">
+        <div class="step-number">3</div>
+        <div class="step-mockup">
+          <img src="images/step-share.webp" alt="Share spot screen" width="220" height="400" loading="lazy">
+        </div>
+        <h3 class="step-title">Go &amp; Share</h3>
+        <p class="step-description">Hit the trail, capture your experience, and share it with the community.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta" id="download">
+    <div class="final-cta-inner">
+      <h2 class="final-cta-title animate-on-scroll">Ready to find your next spot?</h2>
+      <p class="final-cta-subtitle animate-on-scroll">Join thousands of outdoor enthusiasts discovering and sharing<br class="hide-mobile">amazing places every day.</p>
+      <div class="animate-on-scroll">
+        <a href="#" class="btn-cta-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:10px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Spots
+        </a>
+      </div>
+      <span class="final-cta-url">spots.yorklabs.app</span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo-icon.png" alt="Spots" width="28" height="28" class="footer-logo-icon">
+            <span class="footer-logo-text">Spots</span>
+          </div>
+          <span class="footer-tagline">discover · plan · share</span>
+        </div>
+        <div class="footer-columns">
+          <div>
+            <div class="footer-column-title">Product</div>
+            <div class="footer-column-links">
+              <a href="#features" class="footer-column-link">Features</a>
+              <a href="#download" class="footer-column-link">Download</a>
+              <a href="#" class="footer-column-link">Changelog</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-column-title">Company</div>
+            <div class="footer-column-links">
+              <a href="#" class="footer-column-link">About</a>
+              <a href="legal/privacy_policy.html" class="footer-column-link">Privacy</a>
+              <a href="legal/terms-and-conditions.html" class="footer-column-link">Terms</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <span class="footer-copyright">&copy; 2026 York Labs. All rights reserved.</span>
+        <span class="footer-copyright">spots.yorklabs.app</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>
